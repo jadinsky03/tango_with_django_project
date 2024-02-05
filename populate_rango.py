@@ -66,7 +66,7 @@ def add_cat(name, views=0, likes=0):
     c = Category.objects.get_or_create(name=name)[0]
     c.views = views
     c.likes = likes
-    c.save()
+    c.save()    
     return c
 
 if __name__ == '__main__':
